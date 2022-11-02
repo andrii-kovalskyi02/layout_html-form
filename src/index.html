@@ -11,7 +11,157 @@
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
-    <h1>HTML Form</h1>
+    <form action="https://mate-academy-form-lesson.herokuapp.com/create-application" method="post">
+      <fieldset class="distance">
+        <legend>Personal information</legend>
+        <label for="lname" class="vdistance">Surname:
+          <input
+            type="text"
+            id="lname"
+            name="surname"
+            autocomplete="off"
+          ><br>
+        </label>
+
+        <label for="fname" class="vdistance">Name:
+          <input
+            type="text"
+            id="fname"
+            name="name"
+            autocomplete="off"
+          ><br>
+        </label>
+
+        <label for="age" class="vdistance">How old are You?
+          <input
+            type="number"
+            id="age"
+            name="age"
+            min="1"
+            max="100"
+            value="12"
+
+          ><br>
+        </label>
+        <label for="dateOfBirth" class="vdistance">Full date of birth:
+          <input
+            type="date"
+            id="dateOfBirth"
+            name="dateOfBirth"
+
+          ><br>
+        </label>
+        <label for="agree">I accept the term of the agreement
+          <input
+            type="checkbox"
+            id="agree"
+            name="agree"
+            required
+          >
+        </label>
+      </fieldset>
+
+      <fieldset class="distance">
+        <legend>Registration</legend>
+        <label for="email" class="vdistance">E-mail:
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="email@example.com"
+          ><br>
+        </label>
+        <label for="pswd">Password:
+          <input
+            type="password"
+            name="pswd"
+            id="pswd"
+            minlength="5"
+            maxlength="20"
+          >
+        </label>
+      </fieldset>
+
+      <fieldset class="distance">
+        <legend>An interesting fact about you!</legend>
+        <div class="vdistance">
+          Do you love cats?
+          <label for="yes">
+            <input
+            type="radio"
+            name="cats_qestion"
+            id="yes"
+            value="yes"
+            > Yes
+          </label>
+          <label for="no">
+            <input
+            type="radio"
+            name="cats_qestion"
+            id="no"
+            value="no"
+            >No
+          </label>
+        </div>
+
+        <label for="color" class="vdistance">What is your favorite color?
+          <input
+            type="color"
+            name="fcolor"
+            id="color"
+          >
+        </label>
+        <label for="time" class="vdistance">What time do you go to bed?
+          <input
+            type="time"
+            name="time"
+            id="time"
+            step="1"
+          >
+        </label>
+        <label for="brandOfCars" class="vdistance">What are your favorite brand of cars?
+          <select
+            name="brandOfCars"
+            id="brandOfCars"
+            size="4"
+            multiple
+          >
+            <option value="bmw">BMW</option>
+            <option value="audi">Audi</option>
+            <option value="tesla">Tesla</option>
+          </select><br>
+        </label>
+        <label for="range">How do you rate our work?
+          <input
+            type="range"
+            name="rate"
+            id="range"
+            value="0"
+          ><br>
+        </label>
+      </fieldset>
+
+      <fieldset class="distance">
+        <legend>Additional info:</legend>
+        <label for="text" class="vdistance">Comments:
+          <textarea name="comments" id="text"></textarea>
+        </label>
+
+        <label for="recommend">Would you recommend us?
+          <select name="recommend" id="recommend" >
+            <option value="yes">yes</option>
+            <option value="no">no</option>
+            <option value="not sure">not sure</option>
+          </select>
+        </label>
+      </fieldset>
+
+      <button type="submit">Submit</button>
+
+    </form>
+
+
+
     <script type="text/javascript" src="./main.js"></script>
   </body>
 </html>
