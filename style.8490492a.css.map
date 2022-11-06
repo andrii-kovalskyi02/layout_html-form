@@ -1,0 +1,1 @@
+{"version":3,"sources":["style.css"],"names":[],"mappings":"AAEA,gBACE,aAAc,CACd,kBACF,CAEA,mBACE,kBACF","file":"style.8490492a.css","sourceRoot":"..\\src","sourcesContent":["/* styles go here */\n\n.input-distance {\n  display: block;\n  margin-bottom: 10px;\n}\n\n.fieldset-distance {\n  margin-bottom: 20px;\n}\n"]}
